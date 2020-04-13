@@ -15,6 +15,7 @@ namespace CSVHelperNaPratica.Services
 	{
 		public async Task<byte[]> GenerateByteArrayCsvAsync(List<Customer> data)
 		{
+			if (data == null || data.Count == 0) throw new Exception(Resource.TheNumberOfCustomersIsInvalid);
 			using (var memoryStream = new MemoryStream())
 			{
 				using (var streamWriter = new StreamWriter(memoryStream))
@@ -30,6 +31,7 @@ namespace CSVHelperNaPratica.Services
 
 		public async Task<string> GenerateCsvAsync(List<Customer> data)
 		{
+			if (data == null || data.Count == 0) throw new Exception(Resource.TheNumberOfCustomersIsInvalid);
 			string pathTemp = Path.Combine(Path.GetTempPath(), "clientes-csv");
 			if (!Directory.Exists(pathTemp))
 				Directory.CreateDirectory(pathTemp);

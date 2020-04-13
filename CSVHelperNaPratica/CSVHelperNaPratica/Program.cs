@@ -20,18 +20,18 @@ namespace CSVHelper
 
 			var customers = new List<Customer>
 			{
-				new Customer { 
-					Id = 1,
-					Name = "Pedro",
-					Age = 26,
-					BirthDayDate = DateTime.Parse("12/09/1994")
-				},
-				new Customer {
-					Id = 2,
-					Name = "Julia",
-					Age = 30,
-					BirthDayDate = DateTime.Parse("12/09/1990")
-				}
+				new Customer ( 
+					id: 1,
+					name: "Pedro",
+					age: 26,
+					birthDayDate: DateTime.Parse("12/09/1994")
+				),
+				new Customer (
+					id: 2,
+					name: "Julia",
+					age: 30,
+					birthDayDate: DateTime.Parse("12/09/1990")
+				)
 			};
 
 			//var file = exportToCsv.GenerateCsvAsync(customers).GetAwaiter().GetResult();

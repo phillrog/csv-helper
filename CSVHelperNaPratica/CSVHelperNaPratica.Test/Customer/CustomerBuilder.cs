@@ -16,7 +16,7 @@ namespace CSVHelperNaPratica.Test.Builders
 		private int _age { get; set; }
 		private DateTime _birthDayDate { get; set; }
 
-		public CustomerBuilder()
+		public  CustomerBuilder()
 		{
 			_faker = new Faker();
 
@@ -26,7 +26,7 @@ namespace CSVHelperNaPratica.Test.Builders
 			_age = DateTime.Now.Year - _birthDayDate.Year;
 		}
 
-		public CustomerBuilder Novo()
+		public static CustomerBuilder Novo()
 		{
 			return new CustomerBuilder();
 		}
