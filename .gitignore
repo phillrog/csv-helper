@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs
+/CSVHelperNaPratica/.vs
+/CSVHelperNaPratica/CSVHelperNaPratica/bin/Debug/netcoreapp3.0
+/CSVHelperNaPratica/CSVHelperNaPratica/obj
+/CSVHelperNaPratica/CSVHelperNaPratica.Test/bin/Debug/netcoreapp3.0
+/CSVHelperNaPratica/CSVHelperNaPratica.Test/obj
