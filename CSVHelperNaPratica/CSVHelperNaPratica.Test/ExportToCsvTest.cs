@@ -13,7 +13,6 @@ namespace CSVHelperNaPratica.Test
 	public class ExportToCsvTest
 	{
 		private readonly IExportToCsv _exportToCsv;
-		private Customer _customer;
 
 		public ExportToCsvTest()
 		{
