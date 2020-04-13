@@ -17,7 +17,6 @@ namespace CSVHelperNaPratica.Test
 		public ExportToCsvTest()
 		{
 			_exportToCsv = new ExportToCsv();
-			_customer = CustomerBuilder.Novo().Build();
 		}
 
 		[Fact]
