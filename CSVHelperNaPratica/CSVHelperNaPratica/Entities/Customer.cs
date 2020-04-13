@@ -10,5 +10,13 @@ namespace CSVHelperNaPratica.Entities
 		public string Name { get; set; }
 		public int Age { get; set; }
 		public DateTime BirthDayDate { get; set; }
+
+		public Customer(int id, string name, int age, DateTime birthDayDate)
+		{
+			this.Id = id;
+			this.Name = name;
+			this.Age = age;
+			this.BirthDayDate = birthDayDate;
+		}
 	}
 }
