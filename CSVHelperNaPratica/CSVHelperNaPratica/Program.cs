@@ -3,6 +3,7 @@ using CSVHelperNaPratica.Services;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
+using CSVHelperNaPratica.Helpers;
 
 namespace CSVHelper
 {
@@ -37,6 +38,7 @@ namespace CSVHelper
 			//var file = exportToCsv.GenerateCsvAsync(customers).GetAwaiter().GetResult();
 			var bytearray = exportToCsv.GenerateByteArrayCsvAsync(customers).GetAwaiter().GetResult();
 
+			bytearray.Save(@"C:\teste.csv");
 			DisposeServices();
 
 		}
